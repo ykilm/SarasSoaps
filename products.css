@@ -1,0 +1,240 @@
+/* Nav Bar*/
+
+body{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 100px;
+    padding: 0;
+    background: #222;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+}
+
+
+.container {
+    width: 100%;
+    height: 70px;
+}
+
+header{
+    background: #55d6aa;
+}
+
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.logo{
+    float: left;
+    padding: 10px 0;
+    margin-left: 50px;
+}
+
+nav{
+    float: right;
+}
+
+nav ul{
+    margin: 0;
+    padding-right: 50px;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+    position: relative;
+}
+
+nav a{
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+nav a:hover{
+    color: #000;
+}
+
+nav a:before {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+/* slideshow start*/
+.mySlides{
+ display: none;
+}
+
+.nav-buttons{
+ margin-top: 5px;
+ display: inline-block;
+ width: 10%;
+ border-radius: 15px;
+}
+
+h2{
+ text-align: center;
+}
+
+.slideshow{
+ color: white;
+ display: inline-grid;
+}
+
+.button{
+ background-color: #55d6aa;
+ border: none;
+ color: white;
+ padding: 5px 10.6px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ border-radius: 4px;
+
+}
+.display-left{
+ float: left;
+}
+
+.display-right{
+ float: right;
+}
+
+/* slideshow end */
+
+
+h3{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+    font-size: 34px;
+}
+
+p{
+  	margin: 0 30%;
+  	color: #c0c0c0;
+    text-align: center;
+}
+
+/* product links*/
+
+a{
+  text-decoration: none;
+}
+
+.grid-container{
+	display: grid;
+	margin: 0 20%;
+}
+
+.staff-grid{
+	display: grid;
+  border: 1px solid none;
+	grid-template-rows: 1;
+	grid-template-columns: 4;
+	grid-gap: 22px;
+  height: 370px;
+}
+
+.grid-item{
+	display: inline-grid;
+	border: 1px solid #55d6aa;
+	text-align: center;
+	color: white;
+	border-radius: 7px;
+  background: #222;
+}
+
+.grid-item:hover{
+  background: #404040;
+}
+
+.a {
+	grid-column-start: 1;
+  	grid-column-end: 1;
+  	grid-row-start: 1;
+  	grid-row-end: 1;
+}
+
+.b {
+	grid-column-start: 2;
+  	grid-column-end: 2;
+  	grid-row-start: 1;
+  	grid-row-end: 1;
+}
+
+.c {
+	grid-column-start: 3;
+  	grid-column-end: 3;
+  	grid-row-start: 1;
+  	grid-row-end: 1;
+}
+
+.d {
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.contact-image{
+	max-height: 200px;
+	min-height: 20px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.name{
+  margin-top: 10px;
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.description{
+  margin-bottom: 5px;
+}
+
+.name p{
+
+}
+
+p .description{
+  margin: 5%;
+}
+
+
+/* scroll bar*/
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333333;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #84e1c2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2db98a;
+}
+/* end scroll bar*/

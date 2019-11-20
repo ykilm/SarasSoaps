@@ -1,0 +1,97 @@
+﻿<!doctype HTML>
+<html>
+  <head>
+      <title>Sara's Soaps</title>
+      <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+        <link rel="stylesheet" href="style.css">
+</head>
+  <header>
+    <div class="container">
+            <img src="siteLogo.png" alt="image" height="50px" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html	">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                </ul>
+            </nav>
+    </div>
+  </header>
+<body>
+  <h1>Sara's Soaps</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget dolor morbi non arcu risus quis. Eu tincidunt tortor aliquam nulla facilisi cras fermentum. Vitae tempus quam pellentesque nec nam. Quis varius quam quisque id diam vel quam. Viverra tellus in hac habitasse platea. Eleifend mi in nulla posuere. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Amet cursus sit amet dictum sit amet justo donec. Lorem ipsum dolor sit amet. Mi quis hendrerit dolor magna eget est lorem ipsum dolor. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at. Suspendisse potenti nullam ac tortor vitae. Egestas erat imperdiet sed euismod nisi porta lorem. Id velit ut tortor pretium viverra suspendisse. Egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices. Cras semper auctor neque vitae.
+    </p>
+    <br>
+    <br>
+    <h3>What we do here</h3>
+      <p>
+        Ut sem nulla pharetra diam sit. Vel turpis nunc eget lorem dolor sed viverra ipsum. Et odio pellentesque diam volutpat commodo sed. Interdum velit laoreet id donec ultrices tincidunt arcu. Posuere urna nec tincidunt praesent semper feugiat nibh. Sed viverra ipsum nunc aliquet bibendum enim. Sed pulvinar proin gravida hendrerit lectus a. Egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Orci a scelerisque purus semper eget duis at. Id cursus metus aliquam eleifend mi in nulla. Nam libero justo laoreet sit amet cursus sit amet dictum. Feugiat vivamus at augue eget arcu dictum varius duis at. Ultrices eros in cursus turpis. Lectus quam id leo in vitae turpis. Quisque id diam vel quam elementum pulvinar etiam.
+      </p>
+      <br>
+      <br>
+      <h3>How we do it</h3>
+      <p>
+          Rutrum quisque non tellus orci ac. Erat pellentesque adipiscing commodo elit at. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Fames ac turpis egestas maecenas pharetra convallis posuere morbi leo. Erat  pellentesque adipiscing commodo elit at. Eget dolor morbi non arcu risus quis varius quam quisque. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor. Nibh sed pulvinar proin gravida hendrerit lectus a. Neque gravida in fermentum et sollicitudin. Ullamcorper morbi tincidunt ornare massa eget egestas purus. Turpis massa tincidunt dui ut ornare lectus sit. Sed turpis tincidunt id aliquet risus feugiat in ante. Nisl condimentum id venenatis a condimentum vitae sapien. Sed velit dignissim sodales ut eu sem integer vitae. Arcu vitae elementum curabitur vitae nunc. Pellentesque elit eget gravida cum sociis natoque penatibus.
+        </p>
+<br>
+<br>
+<br>
+      <center>
+      		<div class="slideshow">
+      				<h2 class="center">Some Of Our Soaps</h2>
+      					<div class="content display-container">
+      	  				<img class="mySlides" src="slideshow/slide-soap1.png" width="800px">
+        					<img class="mySlides" src="slideshow/slide-soap2.png" width="800px">
+        					<img class="mySlides" src="slideshow/slide-soap3.png" width="800px">
+        					<img class="mySlides" src="slideshow/slide-soap4.png" width="800px">
+        					<img class="mySlides" src="slideshow/slide-soap5.png" width="800px">
+                  <img class="mySlides" src="slideshow/slide-apple.png" width="800px">
+                  <img class="mySlides" src="slideshow/slide-peach.png" width="800px">
+                  <img class="mySlides" src="slideshow/slide-peppermint.png" width="800px">
+                  <img class="mySlides" src="slideshow/slide-regular.png" width="800px">
+      							<div class="nav-buttons">
+        							<button class="button display-left" onclick="plusDivs(-1)">&#10094;</button>
+        							<button class="button display-right" onclick="plusDivs(1)">&#10095;</button>
+      							</div>
+      					</div>
+      		</div>
+      	</center>
+      <script>
+      	var slideIndex = 1;
+      	showDivs(slideIndex);
+
+      	function plusDivs(n) {
+        	showDivs(slideIndex += n);
+      	}
+
+      	function showDivs(n) {
+        	var i;
+        	var x = document.getElementsByClassName("mySlides");
+        	if (n > x.length) {slideIndex = 1}
+        	if (n < 1) {slideIndex = x.length}
+        	for (i = 0; i < x.length; i++) {
+          	x[i].style.display = "none";
+        	}
+        	x[slideIndex-1].style.display = "block";
+      	}
+
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 4000); // Change image every 4 seconds
+        }
+
+      </script>
+</body>
+</html>
